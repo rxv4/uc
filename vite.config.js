@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/UC-sites/', // Remplacez "nom-du-repo" par le nom de votre dépôt GitHub
   plugins: [
     vue(),
     vueDevTools(),
