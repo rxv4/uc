@@ -1,8 +1,6 @@
 <template>
     <div class="content">
-        <header class="header">
-            <h1>/rxv4/</h1>
-        </header>
+        <Header/>
         <p class="p1">Veuillez choisir votre ecole</p>
         <div class="image-container">
             <router-link to="/r1">
@@ -34,8 +32,11 @@
 </template>
 
 <script>
+import Header from "../components/Header.vue";
+
 export default {
     name: 'HomePage',
+    components: { Header }
 };
 </script>
 
@@ -63,13 +64,6 @@ html {
 .p1{
     font-size: large;
     color: rgb(92, 131, 116);
-}
-
-.header {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
 }
 
 .image-container {
