@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <h1>/rxv4/</h1>
+        <router-link to="/" class="btn">rxv4</router-link>
     </header>
 </template>
 
@@ -24,7 +24,17 @@ export default {
     text-align: center;
 }
 
-header h1{
-    margin:20px;
+.btn {
+    font-weight: bold;
+    font-size: xx-large;
+    display: inline-block;
+    margin: 20px;
+    color: beige;
+    text-decoration: none;
+    transition: transform 1s  ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
 }
 </style>

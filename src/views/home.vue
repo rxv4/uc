@@ -1,32 +1,34 @@
 <template>
     <div class="content">
         <Header/>
-        <p class="p1">Veuillez choisir votre ecole</p>
-        <div class="image-container">
-            <router-link to="/r1">
-                <div class="image-wrapper">
-                    <img src="/public/imgs/st-leon.jpg" alt="Image 1">
-                    <div class="overlay">
-                        <p>Saint-Leon</p>
+        <div class="bod">
+            <p class="p1">Veuillez choisir votre ecole</p>
+            <div class="image-container">
+                <router-link to="/r1">
+                    <div class="image-wrapper">
+                        <img src="/public/imgs/st-leon.jpg" alt="Image 1">
+                        <div class="overlay">
+                            <p>Saint-Leon</p>
+                        </div>
                     </div>
-                </div>
-            </router-link>
-            <router-link to="/r2">
-                <div class="image-wrapper">
-                    <img src="/public/imgs/st-leon.jpg" alt="Image 2">
-                    <div class="overlay">
-                        <p>Saint-Leon</p>
+                </router-link>
+                <router-link to="/r2">
+                    <div class="image-wrapper">
+                        <img src="/public/imgs/st-leon.jpg" alt="Image 2">
+                        <div class="overlay">
+                            <p>Saint-Leon</p>
+                        </div>
                     </div>
-                </div>
-            </router-link>
-            <router-link to="/r3">
-                <div class="image-wrapper">
-                    <img src="/public/imgs/st-leon.jpg" alt="Image 3">
-                    <div class="overlay">
-                        <p>Saint-Leon</p>
+                </router-link>
+                <router-link to="/r3">
+                    <div class="image-wrapper">
+                        <img src="/public/imgs/st-leon.jpg" alt="Image 3">
+                        <div class="overlay">
+                            <p>Saint-Leon</p>
+                        </div>
                     </div>
-                </div>
-            </router-link>
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -46,17 +48,24 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Helvetica', sans-serif;
+    background-color: rgb(4, 13, 18);
+}
+
+.bod{
+    margin-top: 200px;
 }
 
 .content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(4, 13, 18);
     color: rgb(147, 177, 166);
-    height: 100vh;
     position: relative;
 }
 
@@ -64,6 +73,7 @@ html {
 .p1{
     font-size: large;
     color: rgb(92, 131, 116);
+    text-align: center;
 }
 
 .image-container {
