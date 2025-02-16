@@ -10,7 +10,7 @@ export default{
 };
 </script>
 
-<style>
+<style scoped>
 
 .warning {
     margin-top: 140px;
@@ -20,7 +20,7 @@ export default{
     background-color: rgba(255, 165, 0, 0.1);
     border-radius: 10px;
     text-align: center;
-    width: fit-content;
+    width:57rem;
     max-width: 80%;
   }
 </style>

@@ -1,30 +1,40 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from "vue-router";
 
-import home from '@/views/home.vue';
-import r1 from '@/views/r1.vue';
-import r2 from '@/views/r2.vue';
-import r3 from '@/views/r3.vue';
+// imports
+import home from "@/views/home.vue";
+import ErrorPage from "@/views/Error.vue";
+import r1 from "@/views/r1.vue";
+import r2 from "@/views/r2.vue";
+import r3 from "@/views/r3.vue";
+
+// importe tout les fichiers dans /projects (projets des enfants)
+const projectModules = import.meta.glob("@/projects/**/*.vue", { eager: true });
+
+const projectRoutes = Object.keys(projectModules).map((path) => {
+  const match = path.match(/\/projects\/([^/]+)\/([^/]+)\.vue$/);
+  if (!match) return null;
+
+  const folder = match[1];
+  const file = match[2];
+
+  return {
+    path: `/${folder}/${file.toLowerCase()}`,
+    component: projectModules[path].default,
+  };
+}).filter(route => route !== null);
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    { path: "/", component: home },
+    { path: "/st-leon", component: r1 },
+    { path: "/maurice-leblanc", component: r2 },
+    ...projectRoutes,
     {
-      path: '/',
-      component: home, // Page d'accueil
+      path: "/:pathMatch(.*)*",
+      component: ErrorPage,
     },
-    {
-      path: '/r1',
-      component: r1, // Page pour la route /r1
-    },
-    {
-      path: '/r2',
-      component: r2, // Page pour la route /r2
-    },
-    {
-      path: '/r3',
-      component: r3, // Page pour la route /r3
-    }
-  ]
+  ],
 });
 
 export default router;
