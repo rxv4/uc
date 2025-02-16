@@ -11,4 +11,14 @@ export default {
 </script>
 
 <style>
+#app {
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* styles globaux */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color-dark);
+}
 </style>

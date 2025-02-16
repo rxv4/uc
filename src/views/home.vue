@@ -4,7 +4,7 @@
         <div class="bod">
             <p class="p1">Veuillez choisir votre ecole</p>
             <div class="image-container">
-                <router-link to="/r1">
+                <router-link to="/st-leon">
                     <div class="image-wrapper">
                         <img src="/public/imgs/st-leon.jpg" alt="Image 1">
                         <div class="overlay">
@@ -12,19 +12,11 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/r2">
+                <router-link to="/maurice-leblanc">
                     <div class="image-wrapper">
-                        <img src="/public/imgs/st-leon.jpg" alt="Image 2">
+                        <img src="/public/imgs/maurice-leblanc.png" alt="Image 2">
                         <div class="overlay">
-                            <p>Saint-Leon</p>
-                        </div>
-                    </div>
-                </router-link>
-                <router-link to="/r3">
-                    <div class="image-wrapper">
-                        <img src="/public/imgs/st-leon.jpg" alt="Image 3">
-                        <div class="overlay">
-                            <p>Saint-Leon</p>
+                            <p>Maurice-Leblanc</p>
                         </div>
                     </div>
                 </router-link>
@@ -42,35 +34,28 @@ export default {
 };
 </script>
 
-<style>
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: rgb(4, 13, 18);
-}
+<style scoped>
 
-.bod{
-    margin-top: 200px;
+.bod {
+    margin-top: 0;
 }
 
 .content {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     font-family: 'Helvetica', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(4, 13, 18);
+    background-color: var(--background-color-dark);
     color: rgb(147, 177, 166);
     position: relative;
+    overflow: hidden;
 }
 
-
-.p1{
+.p1 {
     font-size: large;
     color: rgb(92, 131, 116);
     text-align: center;
@@ -87,8 +72,9 @@ html {
 }
 
 .image-container img {
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     object-fit: cover;
     border: 5px solid rgb(24, 61, 61);
     border-radius: 5px;
