@@ -1,0 +1,37 @@
+📕 sur playcode.io :
+
+<template>
+    <div class="content">
+    
+    </div>
+</template>
+
+<style>
+	body{
+		padding: 0;
+	}
+	  
+	.content {
+		background-color: rgb(255, 40, 40);
+		height: 100vh;
+	}
+</style>
+
+
+
+📗 sur vuejs : 
+
+<template>
+    <div class="content">
+    
+    </div>
+</template>
+
+<style scoped>
+.content {
+		background-color: rgb(255, 40, 40);
+		height: 100vh;
+	}
+	
+									/* AJOUTER margin:0; SI NECESSAIRE */
+</style>

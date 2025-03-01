@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 // imports
 import home from "@/views/home.vue";
@@ -24,7 +24,7 @@ const projectRoutes = Object.keys(projectModules).map((path) => {
 }).filter(route => route !== null);
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", component: home },
     { path: "/st-leon", component: r1 },
