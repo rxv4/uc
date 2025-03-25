@@ -4,14 +4,6 @@
         <div class="bod">
             <p class="p1">Veuillez choisir votre ecole</p>
             <div class="image-container">
-                <router-link to="/r">
-                    <div class="image-wrapper">
-                        <img src="/public/imgs/r.png" alt="Image 2">
-                        <div class="overlay">
-                            <p>:)</p>
-                        </div>
-                    </div>
-                </router-link>
                 <router-link to="/maurice-leblanc">
                     <div class="image-wrapper">
                         <img src="/public/imgs/maurice-leblanc.png" alt="Image 2">

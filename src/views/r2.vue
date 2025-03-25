@@ -29,16 +29,16 @@
       const router = useRouter();
   
       const items = [
-        { title: "test1", date: "2025-02-15" },
-        { title: "test2", date: "2025-02-15" },
-        { title: "test3", date: "2025-02-15" },
-        { title: "test4", date: "2025-02-15" },
-        { title: "test5", date: "2025-02-15" },
-        { title: "test6", date: "2025-02-15" },
-        { title: "test7", date: "2025-02-15" },
-        { title: "test8", date: "2025-02-15" },
-        { title: "test9", date: "2025-02-15" },
-        { title: "test10", date: "2025-02-15" }
+        { title: "Groupe_1", date: "25-02-2025" },
+        { title: "Groupe_2", date: "25-02-2025" },
+        { title: "Groupe_3", date: "25-02-2025" },
+        { title: "Groupe_4", date: "25-02-2025" },
+        { title: "Groupe_5", date: "25-02-2025" },
+        { title: "Groupe_6", date: "25-02-2025" },
+        { title: "Groupe_7", date: "25-02-2025" },
+        { title: "Groupe_8", date: "25-02-2025" },
+        { title: "Groupe_9", date: "25-02-2025" },
+        { title: "Groupe_10", date: "25-02-2025" }
       ];
   
       const navigateTo = (title) => { // push sur la route correspondante au titre
