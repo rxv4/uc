@@ -4,11 +4,11 @@
         <div class="bod">
             <p class="p1">Veuillez choisir votre ecole</p>
             <div class="image-container">
-                <router-link to="/st-leon">
+                <router-link to="/r">
                     <div class="image-wrapper">
-                        <img src="/public/imgs/st-leon.jpg" alt="Image 1">
+                        <img src="/public/imgs/r.png" alt="Image 2">
                         <div class="overlay">
-                            <p>Saint-Leon</p>
+                            <p>:)</p>
                         </div>
                     </div>
                 </router-link>
