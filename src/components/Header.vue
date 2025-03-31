@@ -16,7 +16,6 @@ export default {
     position: absolute;
     width: 100%;
     text-align: center;
-    color: beige;
     z-index: 10;
     border-bottom: 2px solid #339989;
     background-color: var(--background-color-header-darktheme);
@@ -30,7 +29,7 @@ export default {
     font-size: xx-large;
     display: inline-block;
     margin: 20px;
-    color: beige;
+    color: var(--font-color-darktheme);
     text-decoration: none;
     transition: transform 1s  ease;
 }
@@ -51,7 +50,7 @@ export default {
     justify-content: center;
     color: var(--font-color-darktheme);
     text-decoration: none;
-    border: 2px solid var(--font-color-darktheme);
+    border: 3px solid var(--font-color-darktheme);
     border-radius: 50%;
     width: 34px;
     height: 34px;
