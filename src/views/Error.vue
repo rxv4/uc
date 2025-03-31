@@ -17,7 +17,7 @@ export default {
 <style scoped>
 
     .content {
-        background-color: var(--background-color-dark);
+        background-color: var(--background-color-darktheme);
         height: 100vh;
         display: flex;
         justify-content: center;

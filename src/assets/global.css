@@ -1,6 +1,8 @@
 :root{
-    --background-color-dark: rgb(4, 13, 18);
-    --background-color-hover-dark: rgb(25, 36, 42);
-    --font-color-dark:rgb(147, 177, 166);
-    --border-color-dark: rgb(7, 19, 26);
+    --background-color-darktheme: #090909;
+    --background-color-hover-darktheme: #2B2C28;
+    --font-color-darktheme: #FFFAFB;
+    --border-color-light-darktheme: #339989; /* ou #7DE2D1 pour plus clair*/
+    --border-color-dark-darktheme: #2B2C28;
+    --background-color-header-darktheme: #101010;   
 }

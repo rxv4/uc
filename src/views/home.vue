@@ -2,13 +2,15 @@
     <div class="content">
         <Header/>
         <div class="bod">
-            <p class="p1">Veuillez choisir votre ecole</p>
+            <p class="p1">Veuillez choisir votre école</p>
             <div class="image-container">
                 <router-link to="/maurice-leblanc">
                     <div class="image-wrapper">
-                        <img src="/public/imgs/maurice-leblanc.png" alt="Image 2">
-                        <div class="overlay">
-                            <p>Maurice-Leblanc</p>
+                        <div class="image-border">
+                            <img src="/public/imgs/maurice-leblanc.png" alt="Image 2">
+                            <div class="overlay">
+                                <p>Maurice-Leblanc</p>
+                            </div>
                         </div>
                     </div>
                 </router-link>
@@ -27,7 +29,6 @@ export default {
 </script>
 
 <style scoped>
-
 .bod {
     margin-top: 0;
 }
@@ -41,15 +42,15 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color-dark);
-    color: rgb(147, 177, 166);
+    background-color: var(--background-color-darktheme);
+    color: var(--font-color-darktheme);
     position: relative;
     overflow: hidden;
 }
 
 .p1 {
     font-size: large;
-    color: rgb(92, 131, 116);
+    color: var(--font-color-darktheme);
     text-align: center;
 }
 
@@ -63,13 +64,19 @@ export default {
     position: relative;
 }
 
+.image-border {
+    position: relative;
+    border: 5px solid var(--border-color-light-darktheme);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
 .image-container img {
     width: 100%;
     max-width: 350px;
     height: auto;
     object-fit: cover;
-    border: 5px solid rgb(24, 61, 61);
-    border-radius: 5px;
+    display: block;
 }
 
 .overlay {
@@ -79,15 +86,13 @@ export default {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.85);
-    color: rgb(147, 177, 166);
+    color: var(--font-color-darktheme);
     font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 5px;
-    border: 5px solid rgb(147, 177, 166);
 }
 
 .image-wrapper:hover .overlay {

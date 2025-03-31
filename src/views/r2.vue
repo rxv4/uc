@@ -53,14 +53,14 @@
   
   <style scoped>
   .content {
-    background-color: var(--background-color-dark);
+    background-color: var(--background-color-darktheme);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     height: 100vh;
     font-family: 'Helvetica', sans-serif;
-    color: var(--font-color-dark);
+    color: var(--font-color-darktheme);
   }
   
   .list-container {
@@ -70,9 +70,9 @@
     overflow-y: auto;
     margin-top: 50px;
     padding: 10px;
-    border: 3px solid rgb(64, 204, 255);
+    border: 3px solid var(--border-color-light-darktheme);
     border-radius: 10px;
-    background: var(--background-color-light);
+    background: var(--background-color-darktheme);
   }
   
   /* scrollbar */
@@ -81,18 +81,18 @@
   }
   
   .list-container::-webkit-scrollbar-track {
-    background: var(--background-color-dark);
+    background: var(--background-color-darktheme);
     border-radius: 10px;
   }
   
   .list-container::-webkit-scrollbar-thumb {
     background: rgb(188, 205, 207);
     border-radius: 10px;
-    border: 2px solid var(--background-color-dark);
+    border: 2px solid var(--background-color-darktheme);
   }
   
   .list-container::-webkit-scrollbar-thumb:hover {
-    background: rgb(32, 170, 230);
+    background: #7DE2D1;
   }
   
   .list {
@@ -115,7 +115,7 @@
   }
   
   .list-item:hover {
-    background: var(--background-color-hover-dark);
+    background: var(--background-color-hover-darktheme);
     color: white;
   }
   

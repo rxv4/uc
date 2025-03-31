@@ -1,6 +1,6 @@
 <template>
     <div class="warning">
-        <p>⚠️ Les pages ont été imaginées pour être ouvertes sur ordinateur, leur comportement sur un autre appareil n'est pas garanti.</p>
+        <p>⚠️ Les pages ont été imaginées pour être ouvertes sur ordinateur, leur affichage sur un autre appareil n'est pas garanti.</p>
     </div>
 </template>
 

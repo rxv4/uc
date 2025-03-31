@@ -4,6 +4,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import home from "@/views/home.vue";
 import ErrorPage from "@/views/Error.vue";
 import r2 from "@/views/r2.vue";
+import InfoPage from "@/views/Info.vue";
 
 // importe tout les fichiers dans /projects (projets des enfants)
 const projectModules = import.meta.glob("@/projects/**/*.vue", { eager: true });
@@ -25,6 +26,7 @@ const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", component: home },
+    { path: "/info", component: InfoPage},
     { path: "/maurice-leblanc", component: r2 },
     ...projectRoutes,
     {
