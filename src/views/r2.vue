@@ -29,16 +29,16 @@
       const router = useRouter();
   
       const items = [
-        { title: "Groupe_1", date: "25-02-2025" },
-        { title: "Groupe_2", date: "25-02-2025" },
-        { title: "Groupe_3", date: "25-02-2025" },
-        { title: "Groupe_4", date: "25-02-2025" },
-        { title: "Groupe_5", date: "25-02-2025" },
-        { title: "Groupe_6", date: "25-02-2025" },
-        { title: "Groupe_7", date: "25-02-2025" },
-        { title: "Groupe_8", date: "25-02-2025" },
-        { title: "Groupe_9", date: "25-02-2025" },
-        { title: "Groupe_10", date: "25-02-2025" }
+        { title: "les fanes des animaux!!", date: "01-04-2025" },
+        { title: "LB", date: "01-04-2025" },
+        { title: "auto76", date: "01-04-2025" },
+        { title: "club des 3", date: "01-04-2025" },
+        { title: "Nell et Maho meilleures amies pour la vie !", date: "01-04-2025" },
+        { title: "LE DUO DE L ET C", date: "01-04-2025" },
+        { title: "dark vador et kylo ren", date: "01-04-2025" },
+        { title: "lapin-ga", date: "01-04-2025" },
+        { title: "Groupe_9", date: "25-03-2025" },
+        { title: "Groupe_10", date: "25-03-2025" }
       ];
   
       const navigateTo = (title) => { // push sur la route correspondante au titre
