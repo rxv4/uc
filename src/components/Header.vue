@@ -40,7 +40,7 @@ export default {
 
 .info-btn {
     position: absolute;
-    right: 30px;
+    right: 35px;
     top: 50%;
     transform: translateY(-50%);
     font-weight: 800;
@@ -52,8 +52,8 @@ export default {
     text-decoration: none;
     border: 3px solid var(--font-color-darktheme);
     border-radius: 50%;
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     transition: all 0.3s ease;
 }
 
