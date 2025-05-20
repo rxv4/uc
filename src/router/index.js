@@ -4,6 +4,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import home from "@/views/home.vue";
 import ErrorPage from "@/views/Error.vue";
 import r2 from "@/views/r2.vue";
+import r1 from "@/views/r1.vue";
 import InfoPage from "@/views/Info.vue";
 
 // importe tout les fichiers dans /projects (projets des enfants)
@@ -28,6 +29,7 @@ const router = createRouter({
     { path: "/", component: home },
     { path: "/info", component: InfoPage},
     { path: "/maurice-leblanc", component: r2 },
+    { path: "/louis-blanc", component: r1 },
     ...projectRoutes,
     {
       path: "/:pathMatch(.*)*",

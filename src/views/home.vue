@@ -9,12 +9,23 @@
                         <div class="image-border">
                             <img src="/public/imgs/maurice-leblanc.png" alt="Image 2">
                             <div class="overlay">
-                                <p>Maurice-Leblanc</p>
+                                <p>Maurice Leblanc</p>
+                            </div>
+                        </div>
+                    </div>
+                </router-link>
+                <router-link to="/louis-blanc">
+                    <div class="image-wrapper">
+                        <div class="image-border">
+                            <img src="/public/imgs/louis-blanc.png" alt="Image 2">
+                            <div class="overlay">
+                                <p>Louis Blanc</p>
                             </div>
                         </div>
                     </div>
                 </router-link>
             </div>
+
         </div>
     </div>
 </template>
