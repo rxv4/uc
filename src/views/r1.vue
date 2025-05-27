@@ -29,16 +29,25 @@
       const router = useRouter();
   
       const items = [
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "01-04-2025" },
-        { title: "-", date: "25-03-2025" },
-        { title: "-", date: "25-03-2025" }
+        { title: "A", date: "27-05-2025" },
+        { title: "AetG", date: "27-05-2025" },
+        { title: "apprendreSurLesAnimaux", date: "27-05-2025" },
+        { title: "EetM", date: "27-05-2025" },
+        { title: "EetSetM", date: "27-05-2025" },
+        { title: "equipeVictoire", date: "27-05-2025" },
+        { title: "GetN", date: "27-05-2025" },
+        { title: "JetN", date: "27-05-2025" },
+        { title: "KetC", date: "25-03-2025" },
+        { title: "leChienEtLeChat", date: "25-03-2025" },
+        { title: "les2gamers", date: "27-05-2025" },
+        { title: "lesSoveurDesAnimaux", date: "27-05-2025" },
+        { title: "loust", date: "27-05-2025" },
+        { title: "MetT", date: "27-05-2025" },
+        { title: "onL'appelleLaPlaneteBleue", date: "27-05-2025" },
+        { title: "poissonSteve", date: "27-05-2025" },
+        { title: "realMadrid", date: "27-05-2025" },
+        { title: "RetI", date: "27-05-2025" },
+        { title: "ZetL", date: "27-05-2025" }
       ];
   
       const navigateTo = (title) => { // push sur la route correspondante au titre
